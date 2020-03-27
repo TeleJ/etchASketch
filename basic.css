@@ -1,17 +1,25 @@
+.bigBox {
+  width: 80vh;
+  height: 80vh;
+  margin: 0 auto;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  gap: 0.3em;
+  /* gap: 0.2em; */
   grid-auto-rows: minmax(1fr, auto);
   grid-auto-columns: minmax(1fr, auto);
-  /* width: 100%; */
+  width: 100%;
+  flex: 1;
   /* width: 800px; */
   /* height: 80px; */
   /* flex: 1; */
 }
 
 .wrapper > div {
+  border: 1px solid black;
   display: flex;
   background: #eee;
   padding-bottom: 100%;
